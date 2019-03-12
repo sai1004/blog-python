@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<style>
+
+    .containe{
+
+        height:500px;
+        width:700px;
+        box-shadow: 1px 1px 1px 1px black;
+        font-family: san-serif;
+        border-radius: 3px;
+
+    }
+
+    .for{
+
+    padding:50px;
+
+    }
+
+    label{
+
+    color:black;
+    font-size:20px;
+
+
+    }
+
+    input{
+
+    color:black;
+    font-size:20px;
+    width:560px;
+    <!--border-radius: 1px;-->
+
+    }
+
+    button{
+
+    background-color: blue;
+    border:none;
+    border-radius:4px;
+    box-shadow: 1px 1px 1px 1px black;
+    width:80px;
+    height:25px;
+    color:white;
+
+    }
+
+</style>
+
+<div class="containe">
+
+    <form  class="for">
+
+        <label>Email:</label><br>
+        <input type="text" name="name" ><br>
+
+
+        <br>
+        <label>Password:</label><br>
+        <input type="password" name="password">
+
+        <br>
+        <br>
+
+         <div>
+         <a href="about" > <button>Login</button> </a>
+         </div>
+
+    </form>
+
+
+
+</div>
+
+{% endblock content %}
